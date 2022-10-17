@@ -10,4 +10,9 @@ public class Bugatti extends Sportwagen {
 	public void flitze() {
 		System.out.println("S3: Ich bin ein " + bezeichnung() + ", Baby!");
 	}
+	
+	@Override
+	public BugattiReparaturtermin repariereMich() {
+		return new BugattiReparaturtermin(this);
+	}
 }

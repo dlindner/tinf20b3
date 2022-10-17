@@ -5,8 +5,8 @@ import java.util.List;
 public class Main {
 
 	public static void main(String[] args) {
-		final Porsche auto0 = new Porsche();
-		final Bugatti auto1 = new Bugatti();
+		final Sportwagen auto0 = new Porsche();
+		final Sportwagen auto1 = new Bugatti();
 		
 		final List<Sportwagen> meineAutos = List.of(
 			auto0,
@@ -23,6 +23,8 @@ public class Main {
 		}
 		
 		final Werkstatt werkstatt = new Werkstatt();
+		Reparaturtermin termin0 = werkstatt.auftragFür(auto0);
+		//termin0.nehmeWahrIn(werkstatt);
 		werkstatt.repariere(auto0);
 		werkstatt.repariere(auto1);
 		//meineAutos.forEach(werkstatt::repariere);

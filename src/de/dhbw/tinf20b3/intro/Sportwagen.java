@@ -9,11 +9,25 @@ public abstract class Sportwagen {
 		this.bezeichnung = bezeichnung;
 	}
 	
+	public static void woBinIch() {
+		System.out.println("Hier!");
+//		System.out.println(this);
+		System.out.println(Sportwagen.class);
+//		System.out.println(getClass());
+	}
+	
 	public void flitze() {
+		System.out.println(this);
+		System.out.println(Sportwagen.class);
+		System.out.println(getClass());
 		System.out.println("S1: Whooosh!");
 	}
 	
 	protected String bezeichnung() {
 		return bezeichnung;
+	}
+	
+	public Reparaturtermin repariereMich() {
+		return new Reparaturtermin(this);
 	}
 }

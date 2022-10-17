@@ -10,4 +10,9 @@ public class Porsche extends Sportwagen {
 	public void flitze() {
 		System.out.println("S2: Bleib in der Spur, bleib in der Spur!");
 	}
+	
+	@Override
+	public PorscheReparaturtermin repariereMich() {
+		return new PorscheReparaturtermin(this);
+	}
 }
