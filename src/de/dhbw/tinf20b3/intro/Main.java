@@ -5,9 +5,14 @@ import java.util.List;
 public class Main {
 
 	public static void main(String[] args) {
-		final Sportwagen auto0 = new Porsche();
-		final Sportwagen auto1 = new Bugatti();
-		
+		final Autohändler dealer = new Autohändler();
+		ohneAbhängigkeit(
+			dealer.sonderangebot(),
+			dealer.premiumangebot()
+		);
+	}
+
+	private static void ohneAbhängigkeit(Sportwagen auto0, Sportwagen auto1) {
 		final List<Sportwagen> meineAutos = List.of(
 			auto0,
 			auto1
