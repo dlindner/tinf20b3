@@ -5,15 +5,18 @@ import java.util.List;
 public class Main {
 
 	public static void main(String[] args) {
-		final Autohändler dealer = new Autohändler();
+		final Autohändler dealer = new Zwischenhändler(new Sportwagendealer());
 		ohneAbhängigkeit(
 			dealer.sonderangebot(),
 			dealer.premiumangebot()
 		);
 	}
 
-	private static void ohneAbhängigkeit(Sportwagen auto0, Sportwagen auto1) {
-		final List<Sportwagen> meineAutos = List.of(
+	private static void ohneAbhängigkeit(
+		Auto auto0,
+		Auto auto1
+	) {
+		final List<Auto> meineAutos = List.of(
 			auto0,
 			auto1
 		);
@@ -23,7 +26,7 @@ public class Main {
 		// das
 		//meineAutos.forEach(Sportwagen::flitze);
 		// ist gleich
-		for (Sportwagen each : meineAutos) {
+		for (Auto each : meineAutos) {
 			each.flitze();
 		}
 		
@@ -33,7 +36,7 @@ public class Main {
 		werkstatt.repariere(auto0);
 		werkstatt.repariere(auto1);
 		//meineAutos.forEach(werkstatt::repariere);
-		for (Sportwagen each : meineAutos) {
+		for (Auto each : meineAutos) {
 			werkstatt.repariere(each);
 		}
 	}

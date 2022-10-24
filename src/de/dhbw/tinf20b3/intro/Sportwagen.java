@@ -1,6 +1,8 @@
 package de.dhbw.tinf20b3.intro;
 
-public abstract class Sportwagen {
+import java.io.IOException;
+
+public abstract class Sportwagen implements Auto {
 	
 	private String bezeichnung;
 
@@ -15,18 +17,27 @@ public abstract class Sportwagen {
 		System.out.println(Sportwagen.class);
 //		System.out.println(getClass());
 	}
-	
-	public void flitze() {
-		System.out.println(this);
-		System.out.println(Sportwagen.class);
-		System.out.println(getClass());
-		System.out.println("S1: Whooosh!");
+
+	public void close() throws IOException {
+		System.out.println("Ich bin jetzt verschlossen!");
 	}
+
+	
+//	public void flitze() {
+//		System.out.println(this);
+//		System.out.println(Sportwagen.class);
+//		System.out.println(getClass());
+//		System.out.println("S1: Whooosh!");
+//	}
+	
+	@Override
+	public abstract void flitze();
 	
 	protected String bezeichnung() {
 		return bezeichnung;
 	}
 	
+	@Override
 	public Reparaturtermin repariereMich() {
 		return new Reparaturtermin(this);
 	}

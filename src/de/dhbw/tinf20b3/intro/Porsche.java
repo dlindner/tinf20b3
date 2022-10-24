@@ -1,6 +1,8 @@
 package de.dhbw.tinf20b3.intro;
 
-public class Porsche extends Sportwagen {
+import java.io.Closeable;
+
+public class Porsche extends Sportwagen implements Auto, Closeable {
 	
 	public Porsche() {
 		super("911");
@@ -10,7 +12,7 @@ public class Porsche extends Sportwagen {
 	public void flitze() {
 		System.out.println("S2: Bleib in der Spur, bleib in der Spur!");
 	}
-	
+		
 	@Override
 	public PorscheReparaturtermin repariereMich() {
 		return new PorscheReparaturtermin(this);

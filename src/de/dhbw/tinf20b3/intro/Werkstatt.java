@@ -17,7 +17,7 @@ public class Werkstatt {
 		this.terminvergabe.put(Bugatti.class, "Termin für Bugatti");
 	}
 	
-	public void repariere(Sportwagen wagen) {
+	public void repariere(Auto wagen) {
 		System.out.println("W1: Das wird schon wieder, Meister");
 	}
 	
@@ -29,7 +29,7 @@ public class Werkstatt {
 		System.out.println("W3: Boah, bist du ein cooler Typ!");
 	}
 
-	public Reparaturtermin auftragFür(Sportwagen irgendeinAuto) {
+	public Reparaturtermin auftragFür(Auto irgendeinAuto) {
 		String text = this.terminvergabe.get(irgendeinAuto.getClass());
 		System.out.println("Ich will einen " + text);
 		
