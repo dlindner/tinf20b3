@@ -2,7 +2,7 @@ package de.dhbw.tinf20b3.intro;
 
 import java.io.Closeable;
 
-public class Porsche extends Sportwagen implements Auto, Closeable {
+public class Porsche extends Sportwagen implements Closeable {
 	
 	public Porsche() {
 		super("911");
