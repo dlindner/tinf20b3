@@ -9,6 +9,7 @@ public class Main {
 		subjekt.meldeAn(new GuterBeobachter());
 		subjekt.meldeAn(new GuterBeobachter());
 		subjekt.meldeAn(new BöserBeobachter());
+		subjekt.meldeAn(new GuterBeobachter());
 		for (int i = 0; i < 5; i++) {
 			Runnable meineAktion = new Runnable() {
 				@Override

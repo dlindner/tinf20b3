@@ -10,7 +10,7 @@ public class GuterBeobachter implements Beobachter {
 	public void aktualisiere() {
 		System.out.println("Ich sehe genau die Änderung");
 		try {
-			Thread.sleep(1000L);
+			Thread.sleep(500L);
 		} catch (InterruptedException e) {
 			Thread.currentThread().interrupt();
 		}

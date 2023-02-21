@@ -15,7 +15,11 @@ public class Subjekt {
 	public void benachrichtige() {
 		//synchronized (this.angemeldet) {
 			for (Beobachter each : angemeldet) {
-				each.aktualisiere();
+//				try {
+					each.aktualisiere();
+//				} catch (Exception e) {
+//					System.err.println("Fing Exception: " + e.getClass().getSimpleName());
+//				}
 			}
 		//}
 	}
