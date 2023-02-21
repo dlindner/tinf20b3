@@ -6,6 +6,9 @@ public class BöserBeobachter implements Beobachter {
 		super();
 	}
 	
-	
-
+	@Override
+	public void aktualisiere() {
+		System.err.println("Ich bin böse!");
+		((Object) null).toString();
+	}
 }
