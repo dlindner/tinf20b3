@@ -1,4 +1,4 @@
-package de.dhbw.tinf20b3.patterns.intro.singleton;
+package de.dhbw.tinf20b3.patterns.singleton;
 
 import java.util.Iterator;
 
