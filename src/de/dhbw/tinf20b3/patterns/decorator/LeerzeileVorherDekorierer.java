@@ -15,6 +15,4 @@ public class LeerzeileVorherDekorierer extends Dekorierer {
 		System.out.println();
 		super.zeichne();
 	}
-	
-	//InputStream
 }
