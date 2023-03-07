@@ -1,5 +1,7 @@
 package de.dhbw.tinf20b3.patterns.decorator;
 
+import java.io.InputStream;
+
 public class LeerzeileVorherDekorierer extends Dekorierer {
 
 	public LeerzeileVorherDekorierer(
@@ -13,4 +15,6 @@ public class LeerzeileVorherDekorierer extends Dekorierer {
 		System.out.println();
 		super.zeichne();
 	}
+	
+	//InputStream
 }
