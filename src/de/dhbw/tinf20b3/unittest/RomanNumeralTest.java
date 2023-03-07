@@ -36,7 +36,7 @@ public class RomanNumeralTest {
 	public void converts_4() {
 		RomanNumeral target = new RomanNumeral();
 		String actual = target.likeRomans(4); // <--- CUT
-		assertThat(actual, equalTo("IIII"));
+		assertThat(actual, equalTo("IV"));
 	}
 
 	@Test
