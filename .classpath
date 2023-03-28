@@ -7,5 +7,11 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="lib/assertj-core-3.16.1.jar"/>
+	<classpathentry kind="lib" path="lib/byte-buddy-1.10.13.jar"/>
+	<classpathentry kind="lib" path="lib/byte-buddy-agent-1.10.13.jar"/>
+	<classpathentry kind="lib" path="lib/easymock-5.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/mockito-core-3.4.4.jar"/>
+	<classpathentry kind="lib" path="lib/objenesis-2.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
