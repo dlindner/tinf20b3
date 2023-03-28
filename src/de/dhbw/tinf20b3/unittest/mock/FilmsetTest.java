@@ -24,7 +24,8 @@ public class FilmsetTest {
 	@Test
 	public void nicht_funktionierendes_Ausleuchten() {
 		Filmstar given = Mockito.mock(Filmstar.class);
-		Mockito.when(given.werdeAusgeleuchtet()).thenReturn(false);
+		Mockito.when(given.werdeAusgeleuchtet()).thenThrow(new NullPointerException());
+		//Mockito.when(given.werdeAusgeleuchtet()).thenReturn(false);
 		//Mockito.when(given.sageSignatureLine()).thenReturn("Nothing is stronger than family");
 		//Filmstar given = new VinDiesel();
 		Filmset target = new Filmset(given);
